@@ -57,6 +57,7 @@ p {
   font-size: 0.8rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 5px;
+  width: 200px;
 }
 
 .green-dots {
@@ -68,6 +69,33 @@ p {
   font-size: 0.7rem;
   margin-left: 5px;
   vertical-align: middle;
+}
+
+.tout-afficher {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button {
+  border-width: 0;
+  transition: 0.2s;
+}
+
+.tout-afficher:hover,
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+/**** Images & Title bright & outline on hover *****/
+
+.hover-wrapper {
+  transition: 0.3s;
+}
+
+.hover-wrapper:hover {
+  filter: brightness(1.2);
+  text-decoration: underline;
 }
 
 /*** Header & nav ***/
@@ -88,6 +116,7 @@ nav {
 
 .logo img {
   width: 200px;
+  cursor: pointer;
 }
 
 .leftnav {
@@ -150,6 +179,13 @@ h1 span {
   padding: 20px 10px;
   border: 1px solid black;
   border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.box-second-nav:hover {
+  color: white;
+  background-color: #161616;
 }
 
 .secondary-nav p {
@@ -171,7 +207,7 @@ h1 span {
   width: 520px;
 }
 .right-half-carousel img {
-  width: 520px;
+  width: 545px;
   height: 165px;
   object-fit: cover;
 }
@@ -240,7 +276,6 @@ h1 span {
   background-color: rgb(53, 53, 53);
   border-radius: 20px;
   padding: 20px 25px;
-  border-width: 0;
   margin: 25px 0 0 0;
 }
 .right-intermission-container button a {
@@ -322,6 +357,7 @@ h1 span {
 .banner-divider {
   width: 100%;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 
 .banner-divider img {
@@ -388,7 +424,6 @@ h1 span {
 
 .activity-container {
   display: flex;
-  justify-content: space-between;
   gap: 10px;
 }
 
@@ -420,7 +455,7 @@ footer {
   font-size: 0.8rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0 0 5px 15px;
-  color: #837f7f;
+  color: #383838;
 }
 
 .footer-links ul {
