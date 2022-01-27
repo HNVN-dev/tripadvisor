@@ -16,9 +16,9 @@
 
 
 
-    <header>
+    <header class="big-container">
 
-        <nav>
+        <nav class="primary-nav">
             <div class="leftnav">
                 <div class="logo"><img src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg">
                 </div>
@@ -26,9 +26,9 @@
             </div>
             <div class="rightnav">
                 <ul class="navlinks">
-                    <li><a href="#">Avis</a></li>
-                    <li><a href="#">Voyages</a></li>
-                    <li><a href="#">Alertes</a></li>
+                    <li><a href="#"><i class="fas fa-pen"></i> Avis</a></li>
+                    <li><a href="#"><i class="far fa-heart"></i> Voyages</a></li>
+                    <li><a href="#"><i class="far fa-bell"></i> Alertes</a></li>
                 </ul>
                 <button><a>Connectez-vous</a></button>
         </nav>
@@ -41,35 +41,61 @@
             <span></span>
             <span></span>
         </div>
-        <div class="activities-list">
-            <h1><span>Explorez</span> Paris</h1>
-            <ul>
-                <div class="activity-box">
-                    <li> <span><a href="">Hôtels</a></span></li>
-                    <span><a href=""></a></span>
-                    <span></span>
-                </div>
-                <div class="activity-box">
-                    <li><a href="">Locations de vacances</a></li>
-                </div>
-                <div class="activity-box">
-                    <li><a href="">Activités</a></li>
-                </div>
-                <div class="activity-box">
-                    <li><a href="">Restaurants</a></li>
-                </div>
-                <div class="activity-box">
-                    <li><a href="">Forums de voyage</a></li>
-                </div>
-                <div class="activity-box">
-                    <li><a href="">Plus</a></li>
-                </div>
 
-            </ul>
-        </div>
     </header>
 
-    <main>
+    <main class="big-container">
+
+
+        <nav class="secondary-nav">
+
+            <div class="box-second-nav">
+                <p>
+                    Hôtels
+                    <i class="fas fa-bed"></i>
+                </p>
+                <br>
+            </div>
+
+            <div class="box-second-nav">
+                <p>
+                    Location de vacances
+                    <i class="fas fa-house-user"></i>
+                </p>
+
+            </div>
+            <div class="box-second-nav">
+                <p>
+                    Activités
+                    <i class="fas fa-hiking"></i>
+                </p>
+                <br>
+            </div>
+
+            <div class="box-second-nav">
+                <p>
+                    Restaurants
+                    <i class="fas fa-utensils"></i>
+                </p>
+                <br>
+            </div>
+
+            <div class="box-second-nav">
+                <p>
+                    Forum de <br> voyage
+                    <i class="fas fa-folder-open"></i>
+
+                </p>
+            </div>
+
+            <div class="box-second-nav">
+                <p>
+                    Plus
+                    <i class="fas fa-ellipsis-h"></i>
+                </p>
+                <br>
+            </div>
+        </nav>
         <section class="carousel">
             <div class="left-half-carousel">
                 <img src="./assets/img/img1.jpeg" alt="">
@@ -93,19 +119,33 @@
         </section>
         <section class="intermission">
             <div class="intermission-container">
-                <h2>La Ville Lumière éblout en tous points</h2>
-                <p>
-                    Aucun autre endroit au monde ne fait autant rêver que Paris. La ville séduit par son art, son
-                    architecture, sa culture et sa cuisine, mais il y a aussi des merveilles plus discrètes qui
-                    n’attendent qu’à être explorées : les ruelles pavées pittoresques, les pâtisseries au coin de la rue
-                    et les petits bistrots douillets qui vous invitent à boire un verre de beaujolais. Préparez-vous à
-                    vous approprier Paris.
-                </p>
+                <div class="left-intermission-container">
+                    <h2>La Ville Lumière éblout en tous points</h2>
+                    <p>
+                        Aucun autre endroit au monde ne fait autant rêver que Paris. La ville séduit par son art, son
+                        architecture, sa culture et sa cuisine, mais il y a aussi des merveilles plus discrètes qui
+                        n’attendent qu’à être explorées : les ruelles pavées pittoresques, les pâtisseries au coin de la
+                        rue
+                        et les petits bistrots douillets qui vous invitent à boire un verre de beaujolais. Préparez-vous
+                        à
+                        vous approprier Paris.
+                    </p>
+                </div>
+                <div class="right-intermission-container">
+                    <div class="paris-box">
+                        <h2>Paris : commencez à organiser !</h2>
+                        <p>Créez un voyage pour enregistrer et organiser toutes vos idées et les visualiser sur une
+                            charset</p>
+                        <button><a href="">Créez un voyage</a></button>
+                    </div>
+                    <img src="./assets/img/map.png" alt="">
+                </div>
+
             </div>
         </section>
         <section class="paris-unmissable">
             <h2>Paris : les immanquables</h2>
-            <div class="unmissable-container">
+            <div class="activity-container">
 
                 <div class="resume-box">
                     <h3>Se divertir</h3>
@@ -114,34 +154,193 @@
                     <p class><span>Tout afficher</span></p>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/ent1.jpeg" alt="">
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/tour-eiffeil.jpeg" alt="">
+                        <img class="badge" src="./assets/img/logo.svg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h4>Tour Eiffel</h4>
-                    <div class="rates"></div>
-                    <p>Tours et plateformes d'observation, <br> Monuments & Points d'intérêt
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">140 568</span></div>
+                    </div>
+                    <div class="description">Tours et plateformes d'observation, <br> Monuments & Points d'intérêt</div>
                     </p>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/ent2.jpeg" alt="">
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/musee-louvre.jpeg" alt="">
+                        <img class="badge" src="./assets/img/logo.svg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h4>Musée du Louvre</h4>
-                    <div class="rates"></div>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">101 117</span></div>
+                    </div>
                     <p>Bâtiments architecturaux, Musées d'art
                     </p>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/ent3.jpeg" alt="">
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/arc-triomphe.jpeg" alt="">
+                        <img class="badge" src="./assets/img/logo.svg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h4>Arc de Triomphe</h4>
-                    <div class="rates"></div>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">45 260</span></div>
+                    </div>
                     <p>Bâtiments architecturaux, Sites historiques
                     </p>
                 </div>
+                <!-- div class="unmissable-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/ent1.jpeg" alt="">
+                        <img class="badge" src="./assets/img/logo.svg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Tour Eiffel</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">140 568</span></div>
+                    </div>
+                    <div class="description">Tours et plateformes d'observation, <br> Monuments & Points d'intérêt</div>
+                    </p>
+            </div>
+
+            <div class="unmissable-box">
+                <div class="img-box">
+                    <img class="mainboxpicture" src="./assets/img/ent2.jpeg" alt="">
+                    <img class="badge" src="./assets/img/logo.svg" alt="">
+                    <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                </div>
+                <h4>Musée du Louvre</h4>
+                <div class="rates">
+                    <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12" aria-label=""
+                            title="">
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="">
+                            </path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(26 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(52 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(78 0)"></path>
+                            <path
+                                d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                transform="translate(104 0)"></path>
+                        </svg><span class="total-rates">101 117</span></div>
+                </div>
+                <p>Bâtiments architecturaux, Musées d'art
+                </p>
+            </div>
+
+            <div class="unmissable-box">
+                <div class="img-box">
+                    <img class="mainboxpicture" src="./assets/img/ent3.jpeg" alt="">
+                    <img class="badge" src="./assets/img/logo.svg" alt="">
+                    <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                </div>
+                <h4>Arc de Triomphe</h4>
+                <div class="rates">
+                    <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12" aria-label=""
+                            title="">
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="">
+                            </path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(26 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(52 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(78 0)"></path>
+                            <path
+                                d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                transform="translate(104 0)"></path>
+                        </svg><span class="total-rates">45 260</span></div>
+                </div>
+                <p>Bâtiments architecturaux, Sites historiques
+                </p>
+            </div> -->
 
             </div>
         </section>
         <section class="paris-unmissable">
-            <div class="unmissable-container">
+            <div class="activity-container">
 
                 <div class="resume-box">
                     <h3>Se reposer</h3>
@@ -150,28 +349,100 @@
                     <p class><span>Tout afficher</span></p>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/rep1.jpeg" alt="">
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/bristol-paris.jpeg" alt="">
+                        <img class="badge" src="./assets/img/logo.svg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h4>Le Bristol Paris</h4>
-                    <div class="rates"></div>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">2128</span></div>
+                    </div>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/rep2.jpeg" alt="">
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/reserve-paris.jpeg" alt="">
+                        <img class="badge" src="./assets/img/logo.svg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h4>La Réserve Paris - Hôtel and Spa</h4>
-                    <div class="rates"></div>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">513</span></div>
+                    </div>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/rep3.jpeg" alt="">
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/four-seasons-hotel-george.jpeg" alt="">
+                        <img class="badge" src="./assets/img/logo.svg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h4>Four Seasons Hotel George V</h4>
-                    <div class="rates"></div>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">3112</span></div>
+                    </div>
                 </div>
 
             </div>
         </section>
         <section class="paris-unmissable">
-            <div class="unmissable-container">
+            <div class="activity-container">
 
                 <div class="resume-box">
                     <h3>Se restaurer</h3>
@@ -180,27 +451,98 @@
                     <p class><span>Tout afficher</span></p>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/verjus.jpeg" alt="">
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/verjus.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h4>Verjus</h4>
-                    <div class="rates"></div>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">587</span></div>
+                    </div>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/faubourg.jpeg" alt="">
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/faubourg.jpeg" alt="">
+                        <img class="badge" src="./assets/img/logo.svg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h4>114 Faubourg</h4>
-                    <div class="rates"></div>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">1787</span></div>
+                    </div>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/frenchie.jpeg" alt="">
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/frenchie.jpeg" alt="">
+                        <img class="badge" src="./assets/img/logo.svg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h4>Frenchie</h4>
-                    <div class="rates"></div>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">1311</span></div>
+                    </div>
                 </div>
 
             </div>
         </section>
-        <div class="banner-divider"><img src="./assets/img/banner.jpeg" alt=""></div>
+        <div class="banner-divider"><img src="./assets/img/tripadvisor-banner.jpeg" alt=""></div>
         <section class="forum-trend">
             <div class="forum-trend-infos">
                 <h2>En tendance dans les forums</h2>
@@ -230,63 +572,631 @@
             </div>
             <div class="rent-container">
                 <div class="rent-box">
-                    <img src="/assets/img/apartamento.jpeg" alt="">
+                    <div class="img-box">
+                        <img src="./assets/img/apartamento-centro-paris.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h3>APARTAMENTO CENTRO DE PARIS 4 Le Marais</h3>
-                    <div class="rates">55</div>
-                    <div class="room-infos">5 couchages - 2 chambres - Salle de bain</div>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">55</span></div>
+                    </div>
+                    <div class="description">5 couchages - 2 chambres - Salle de bain</div>
                     <div class="price">à partir de 269€/nuit</div>
 
                 </div>
                 <div class="rent-box">
-                    <img src="/assets/img/welcoming.jpeg" alt="">
+                    <div class="img-box">
+                        <img src="/assets/img/welcoming-charming-convenient-apartment.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
                     <h3>Welcoming, charming, convenient apartment</h3>
-                    <div class="rates">55</div>
-                    <div class="room-infos">5 couchages - 2 chambres - Salle de bain</div>
-                    <div class="price">à partir de 116€/nuit</div>
-
-                </div>
-
-                <div class="rent-box">
-                    <img class="first-rent-img" src="/assets/img/parisappart.jpeg" alt="">
-                    <h3>Paris - Place Clichy Appartement 2 Pieces avec pkg</h3>
-                    <div class="rates">55</div>
-                    <div class="room-infos">5 couchages - 2 chambres - Salle de bain</div>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">44</span></div>
+                    </div>
+                    <div class="description">3 couchages - 1 chambre - 1 Salle de bain</div>
                     <div class="price">à partir de 115€/nuit</div>
+
                 </div>
-            </div>
+                <div class="rent-box">
+                    <div class="img-box">
+                        <img src="/assets/img/apartamento-centro-paris.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h3>Paris - Place Clichy Appartement 2 Pieces avec pkg</h3>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">44</span></div>
+                    </div>
+                    <div class="description">5 couchages - 2 chambres - Salle de bain</div>
+                    <div class="price">à partir de 115€/nuit</div>
+
+                </div>
+
+
         </section>
 
         <section class="paris-unmissable">
             <h2>Paris est géniale pour</h2>
-            <h3>Food hallds, épiceries et marchés de rue pour les gastronomes</h3>
-            <div class=" unmissable-container">
+            <h3>Food hall, épiceries et marchés de rue pour les gastronomes</h3>
+            <div class=" activity-container">
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/rep1.jpeg" alt="">
-                    <h4>Le Bristol Paris</h4>
-                    <div class="rates"></div>
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/rue-montorgueil.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Rue Montorgueil</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">722</span></div>
+                    </div>
+                    <div class="description">Monuments & Points d'intérêt</div>
                 </div>
-                <div class="unmissable-box">
-                    <img src="./assets/img/rep1.jpeg" alt="">
-                    <h4>Le Bristol Paris</h4>
-                    <div class="rates"></div>
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/marche-daligre.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Marché d'Aligre</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">385</span></div>
+                    </div>
+                    <div class="description">Marchés aux puces & Marchés de rue, Marchés fermiers</div>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/rep2.jpeg" alt="">
-                    <h4>La Réserve Paris - Hôtel and Spa</h4>
-                    <div class="rates"></div>
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/marche-enfants-rouges.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Marche des Enfants Rouges</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12zm0 2a9.983 9.983 0 019.995 10 10 10 0 01-10 10A10 10 0 012 12 10 10 0 0112 2z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">1023</span></div>
+                    </div>
+                    <div class="description">Marchés aux puces & Marchés de rue, Marchés fermiers</div>
+                </div>
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/grande-epicerie-paris.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>La Grande Épicerie De Paris</h4>
+                    <div class="rates">
+                        <div class="rates" aria-label="4,5 sur 5&nbsp;bulles. 587 avis"><svg class="green-dots"
+                                viewBox="0 0 128 24" width="68" height="12" aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">901</span></div>
+                    </div>
+                    <div class="description">Boutiques de souvenirs & Magasins spécialisés, Marchés fermiers</div>
                 </div>
 
-                <div class="unmissable-box">
-                    <img src="./assets/img/rep3.jpeg" alt="">
-                    <h4>Four Seasons Hotel George V</h4>
-                    <div class="rates"></div>
+            </div>
+        </section>
+        <section class="paris-unmissable">
+            <h3>Parfaites pâtisseries parisiennes</h3>
+            <div class=" activity-container">
+
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/boulangerie-poilane.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Boulangerie Poilâne</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12zm0 2a9.983 9.983 0 019.995 10 10 10 0 01-10 10A10 10 0 012 12 10 10 0 0112 2z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">156</span></div>
+                    </div>
+                    <div class="description">Boutiques de souvenirs & Magasins spécialisés, Boutique de nourriture et
+                        boissons</div>
+                </div>
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/pain-et-idees.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Du Pain et des Idées</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">918</span></div>
+                    </div>
+                    <div class="description">€ • Française, Européenne, Végétariens bienvenus</div>
+                </div>
+
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/patisserie-cyril-lignac.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>La Pâtisserie Cyril Lignac</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12zm0 2a9.983 9.983 0 019.995 10 10 10 0 01-10 10A10 10 0 012 12 10 10 0 0112 2z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">269</span></div>
+                    </div>
+                    <div class="description">€€-€€€• Française</div>
+                </div>
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/angelina-paris.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Angelina Paris</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12zm0 2a9.983 9.983 0 019.995 10 10 10 0 01-10 10A10 10 0 012 12 10 10 0 0112 2z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">10 802</span></div>
+                    </div>
+                    <div class="description">€€-€€€• Française, Végétariens bienvenus</div>
+                </div>
+
+            </div>
+        </section>
+        <section class="paris-unmissable">
+
+            <h3>Splendides espaces verts</h3>
+            <div class=" activity-container">
+
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/jardin-des-tuileries.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Jardin des Tuileries</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">7561</span></div>
+                    </div>
+                    <div class="description">Jardins</div>
+                </div>
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/parc-buttes-chaumont.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Parc des Buttes-Chaumont</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">2069</span></div>
+                    </div>
+                    <div class="description">Parcs</div>
+                </div>
+
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/place-vosges.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Place des Vosges</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">5672</span></div>
+                    </div>
+                    <div class="description">Monuments & Points d'intérêt</div>
+                </div>
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/parc-monceau.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Parc Monceau</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">1024</span></div>
+                    </div>
+                    <div class="description">Parcs</div>
+                </div>
+
+            </div>
+        </section>
+        <section class="paris-unmissable">
+
+            <h3>Bars à cocktails pour les soirées</h3>
+            <div class=" activity-container">
+
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/little-red-door.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Little Red Door</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">385</span></div>
+                    </div>
+                    <div class="description">€€- €€€</div>
+                </div>
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/lulu-white.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Lulu White</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">83</span></div>
+                    </div>
+                    <div class="description">Bars et clubs, Bars de jazz</div>
+                </div>
+
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/bar-hemingway.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Bar Hemingway</h4>
+                    <div class="rates">
+                        <div class="rates" aria-label="4,5 sur 5&nbsp;bulles. 587 avis"><svg class="green-dots"
+                                viewBox="0 0 128 24" width="68" height="12" aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.389 0 0 5.389 0 12c0 6.62 5.389 12 12 12 6.62 0 12-5.379 12-12S18.621 0 12 0zm0 2a9.984 9.984 0 0110 10 9.976 9.976 0 01-10 10z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">272</span></div>
+                    </div>
+
+                    <div class="description">Bars et clubs</div>
+                </div>
+                <div class="activity-box">
+                    <div class="img-box">
+                        <img class="mainboxpicture" src="./assets/img/candelaria.jpeg" alt="">
+                        <img class="heartbadge" src="./assets/img/circleheart.png" alt="">
+                    </div>
+                    <h4>Candelaria</h4>
+                    <div class="rates">
+                        <div class="rates"><svg class="green-dots" viewBox="0 0 128 24" width="68" height="12"
+                                aria-label="" title="">
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="">
+                                </path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(26 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(52 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                    transform="translate(78 0)"></path>
+                                <path
+                                    d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12zm0 2a9.983 9.983 0 019.995 10 10 10 0 01-10 10A10 10 0 012 12 10 10 0 0112 2z"
+                                    transform="translate(104 0)"></path>
+                            </svg><span class="total-rates">542</span></div>
+                    </div>
+                    <div class="description">€€-€€€ - Mexicaine, Latino, Amérique centrale</div>
                 </div>
 
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="left-footer-half-part">
+                <img src="/assets/img/Tripadvisor_logoset_solid_green.svg" alt="">
+            </div>
+            <div class="right-footer-half-part">
+                <div class="footer-credit">© 2022 TripAdvisor LLC Tous droits réservés.</div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="">Conditions d'utilisation</a></li>
+                        <li><a href="">Confidentialité et utilisation des cookies</a></li>
+                        <li><a href="">Accord d'utilisation des cookies</a></li>
+                        <li><a href="">Plan du site</a></li>
+                        <li><a href="">Fonctionnement du site</a></li>
+                    </ul>
+                </div>
+                <div class="footer-diclaimer">
+                    <p class="disclaimer">Cette version de notre site internet s'adresse aux personnes parlant français
+                        en France. Si vous
+                        habitez un autre pays ou une autre région, merci de choisir la version de Tripadvisor appropriée
+                        pour votre pays ou région dans le menu déroulant. <strong>plus</strong> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
 
 </body>

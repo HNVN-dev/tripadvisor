@@ -13,6 +13,19 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Trip Sans Reg";
+  src: url("../fonts/TripSans-Regular.eot");
+  src: url("../fonts/TripSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TripSans-Regular.woff2") format("woff2"),
+    url("../fonts/TripSans-Regular.woff") format("woff"),
+    url("../fonts/TripSans-Regular.ttf") format("truetype"),
+    url("../fonts/TripSans-Regular.svg#TripSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: "Trip Sans Med";
 }
@@ -40,14 +53,28 @@ p {
   font-weight: normal;
 }
 
+.description {
+  font-size: 0.8rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 5px;
+}
+
+.green-dots {
+  fill: #00aa6c;
+  vertical-align: middle;
+}
+
+.total-rates {
+  font-size: 0.7rem;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
 /*** Header & nav ***/
 
-header,
-main {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 90%;
+.big-container,
+.footer-container {
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -111,52 +138,45 @@ h1 span {
   color: rgb(255, 111, 111);
 }
 
-.activities-list {
-  margin-top: 20px;
-  width: 100%;
+/* Secondary Nav */
+.secondary-nav {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
 }
 
-.activities-list ul {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.box-second-nav {
+  flex: 1;
+  padding: 20px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-.activity-box {
+.secondary-nav p {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.activity-box:nth-child(1) {
-  text-align: left;
-}
-
-.activity-box:nth-child(2) {
-  text-align: right;
+  /* margin: 10px; */
 }
 
 /*** main session ***/
 
 .carousel {
   display: flex;
-  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+  gap: 3px;
 }
 
 .left-half-carousel img {
-  width: 500px;
+  width: 520px;
 }
 .right-half-carousel img {
-  width: 310px;
-  margin-left: 5px;
+  width: 520px;
+  height: 165px;
+  object-fit: cover;
 }
 .right-half-carousel img:nth-child(1) {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .right-half-carousel {
@@ -171,9 +191,10 @@ h1 span {
   width: 100%;
 }
 
-.carousel-nav ul {
+.carousel-nav ul,
+.carousel-nav p {
   display: inline-flex;
-  margin: 20px 0 40px 0;
+  margin: 0px 0 40px 0;
 }
 
 .carousel-nav ul li a,
@@ -190,7 +211,40 @@ h1 span {
 }
 
 .intermission-container {
-  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-intermission-container {
+  width: 40%;
+}
+.right-intermission-container {
+  width: 50%;
+}
+.right-intermission-container img {
+  height: 40%;
+  width: 100%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  object-fit: cover;
+}
+.paris-box {
+  background-color: rgb(245, 118, 118);
+  padding: 40px 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.right-intermission-container button {
+  background-color: rgb(53, 53, 53);
+  border-radius: 20px;
+  padding: 20px 25px;
+  border-width: 0;
+  margin: 25px 0 0 0;
+}
+.right-intermission-container button a {
+  color: white;
 }
 
 /*** Paris Unmissable ***/
@@ -205,10 +259,11 @@ h1 span {
   margin-bottom: 40px;
 }
 
-.unmissable-container {
+.activity-container {
   display: inline-flex;
   justify-content: space-around;
   width: 100%;
+  /* overflow: scroll; */
 }
 
 .resume-box {
@@ -227,17 +282,38 @@ h1 span {
   margin-bottom: 15px;
 }
 
-.unmissable-box img {
+.activity-box .mainboxpicture {
   width: 250px;
   height: 200px;
   margin-bottom: 5px;
 }
 
-.unmissable-box h4 {
+.img-box {
+  position: relative;
+}
+
+.activity-box .badge {
+  z-index: 99999;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.activity-box .heartbadge,
+.rent-box .heartbadge {
+  z-index: 99999;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0px 0px 1px #000);
+}
+
+.activity-box h4 {
   margin-bottom: 5px;
 }
 
-.unmissable-box p {
+.activity-box p {
   font-size: 0.8rem;
 }
 
@@ -270,11 +346,10 @@ h1 span {
   width: 100%;
 }
 
-.forum-trend-container,
-.rent-container {
+.forum-trend-container {
   display: inline-flex;
-  justify-content: space-between;
   width: 100%;
+  gap: 10px;
 }
 
 .trend-box {
@@ -291,12 +366,12 @@ h1 span {
 
 /*** Rent section ***/
 
-.rent {
-  margin-bottom: 140px;
-}
-
 .rent-infos {
   margin-bottom: 20px;
+}
+
+.rent-container {
+  display: flex;
 }
 
 .rent-box img {
@@ -305,8 +380,64 @@ h1 span {
   margin-bottom: 10px;
 }
 
+.rent-box .description {
+  margin-bottom: 7px;
+}
+
 /*** Last section ***/
+
+.activity-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 
 .paris-unmissable h3 {
   margin-bottom: 20px;
+}
+
+/*** Footer ***/
+
+footer {
+  width: 100%;
+  background-color: #faf1ed;
+  height: 150px;
+  padding-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+}
+.left-footer-half-part img {
+  width: 50px;
+  height: 50px;
+}
+.left-footer-half-part {
+  height: 60%;
+}
+
+.footer-credit {
+  font-size: 0.8rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0 0 5px 15px;
+  color: #837f7f;
+}
+
+.footer-links ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.footer-links ul li {
+  margin: 2px 10px 2px 15px;
+  text-decoration: underline;
+}
+
+.disclaimer {
+  margin-top: 5px;
+  font-size: 0.7rem;
+}
+
+.footer-links,
+.disclaimer {
+  width: 60%;
 }
